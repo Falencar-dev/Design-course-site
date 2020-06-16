@@ -153,7 +153,7 @@ opacity: 0.4;
 }
 
 .arrows {
-    width: 40px;
+    width: 10px;
     visibility: hidden;
     margin: 0.5em;
 }
@@ -168,6 +168,21 @@ opacity: 0.4;
 
 .skillshare {
     width: 100px;
+}
+
+footer {
+    font-size: 0.8em;
+    text-align: center;
+    padding-bottom: 1em;
+
+}
+
+.link {
+    color: rgba(181, 32, 218, 1);
+}
+
+.link:hover {
+    color: rgba(181, 32, 218, 0.7);
 }
 
 @media screen and (min-width:500px) {
@@ -193,7 +208,7 @@ opacity: 0.4;
     }
 
     .arrows {
-        width: 40px;
+        width: 100px;
         visibility: visible;
         cursor: pointer;
         margin: 0.5em;
@@ -228,33 +243,42 @@ opacity: 0.4;
     body {
         font-size: 20px;
     }
+
     .stats {
         display: flex;
         justify-content: space-between;
         margin: 0.5em auto;
     }
+
     .companies {
         transform: translateX(10px);
     }
+
     .carousel-container {
         margin-top: 0px;
     }
+
     h1 {
         font-size: 2.5em;
     }
+
     .subtitle {
         font-size: 1em;
     }
+
     h2 {
         text-align: left;
         font-size: 2em;
     }
+
     .v-padding {
         padding: 4em;
     }
+
     .light-purple-wrapper {
         padding-bottom: 4em;
     }
+
     .move-up {
         margin-top: -4.2em;
     }
@@ -264,9 +288,11 @@ opacity: 0.4;
         border-right: 1px solid rgb(124, 89, 148);
         padding-right: 5%;
     }
+
     .stats li:last-child {
         border: 0;
     }
+
     nav {
         position: absolute;
         right: 0;
