@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #2B192F;
+    color: white ;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-wrapper {
+    background: url("../images/bg_copy.jpg");
+    background-size: cover;
+}
+
+.wrapper {
+    padding: 1.5em;
+    max-width: 1200px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul a {
+    padding: 0.5em;
+}
+
+.hero-content {
+    margin: 3em 0 1em;
+}
+
+.subtitle {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.light-purple-wrapper {
+    background: #351F3A;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+    justify-content: space-around;
+    margin-top: 2em;
+    margin-bottom: -2em;
+}
+
+.stats li {
+    margin-bottom: 1.5em;
+}
+
+.stats strong {
+    font-size: 1.4em;
+}
+
+.stats span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    margin-right: 0.3em;
+}
+
+span.edit {
+margin-right: 15px;
+}
+
+.extended-wrapper {
+    padding: 0 1em 2rem;
+    max-width: 1230px;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+.carousel li {
+    background: #422847;
+    padding: 15px;
+    margin-bottom: 1em;
+}
+
+blockquote {
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+cite {
+    color: #E379FF;
+    font-weight: bold;
+    font-size: 0.8em;
+    font-style: normal;
+    position: relative;
+    padding-left: 25px;
+}
+
+cite::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    height: 1px;
+    width: 20px;
+    border-bottom: 1px solid white;
+}
+
+h2 {
+    text-align: center;
+    position: relative;
+}
+
+h2::before {
+    content:"";
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    top: -5px;
+    background:#E379FF;
+}
+
+.companies {
+text-align: center;
+opacity: 0.4;
+}
+
+.companies li {
+    margin: 2em 0;
+}
+
+.arrows {
+    width: 40px;
+    visibility: hidden;
+    margin: 0.5em;
+}
+
+#right-arrow {
+    transform: rotate(180deg);
+}
+
+.pluralsight {
+    width: 200px;
+}
+
+.skillshare {
+    width: 100px;
+}
+
+@media screen and (min-width:500px) {
+    .companies {
+        display:grid;
+        grid-template-columns: repeat(2,auto);
+
+    }
+}
+
+@media screen and (min-width:690px) {
+    body {
+        font-size: 18px;
+    }
+
+    .wrapper {
+        padding: 1.5em 3em;
+    }
+
+    .carousel-container {
+        padding: 1em 1em;
+        display: flex;
+    }
+
+    .arrows {
+        width: 40px;
+        visibility: visible;
+        cursor: pointer;
+        margin: 0.5em;
+    }
+
+    ul.carousel {
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    ul.carousel li {
+        margin-right: 1em;
+        margin-bottom: 0;
+        padding: 2em;
+    }
+
+    ul.carousel li:last-child {
+        margin-right: 0px;
+    }
+
+    .companies {
+        display:flex;
+        justify-content: space-between;
+        transform: translateX(-20px);
+    }
+
+    .companies li {
+        padding-right: 10px;
+    }
+}
+@media screen and (min-width: 850px) {
+    body {
+        font-size: 20px;
+    }
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5em auto;
+    }
+    .companies {
+        transform: translateX(10px);
+    }
+    .carousel-container {
+        margin-top: 0px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    .subtitle {
+        font-size: 1em;
+    }
+    h2 {
+        text-align: left;
+        font-size: 2em;
+    }
+    .v-padding {
+        padding: 4em;
+    }
+    .light-purple-wrapper {
+        padding-bottom: 4em;
+    }
+    .move-up {
+        margin-top: -4.2em;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .stats li {
+        border-right: 1px solid rgb(124, 89, 148);
+        padding-right: 5%;
+    }
+    .stats li:last-child {
+        border: 0;
+    }
+    nav {
+        position: absolute;
+        right: 0;
+        transform: translateX(-60px);
+        }
+}
